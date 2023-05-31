@@ -1,0 +1,66 @@
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-items: center;
+  margin: 0.5rem 0 0 0.5rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+ 
+}
+
+.tasks{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 46rem;
+  min-height: 4.5rem;
+  color: var(--gray-200);
+  
+
+}
+
+.tasks:hover{
+  background: var(--gray-600);
+  border: 1px solid var(--gray-300);
+  border-radius: 8px;
+  transitions: 3s;
+}
+
+.tasks button{
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 4px;
+}
+
+.concluedTask{
+  color: var(--blue-300);
+  
+}
+
+.concluedTask:hover{
+  color: var(--purple-300);
+
+}
+
+
+.deleteTask{
+  color: var(--gray--400);
+}
+
+.deleteTask:hover{
+ color: var(--red-500);
+ transition: 0.8s;
+}
+
+.tasks p{
+  max-width: 38rem;
+  word-wrap: break-word;
+  height: auto;
+}
