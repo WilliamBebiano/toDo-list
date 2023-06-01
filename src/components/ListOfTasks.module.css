@@ -3,12 +3,12 @@
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  position: relative;
   padding: 0px;
   gap: 2rem;
-  position: absolute;
   min-width: 46rem;
   height: 50vh;
-  top: 18rem;
+  top: 3.7rem;
   
 
 }
@@ -87,7 +87,7 @@
 
 .emptyTasks p{
   margin-top: 0.2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 400;
+  font-weight: 700;
 }

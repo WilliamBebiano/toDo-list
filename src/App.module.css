@@ -3,7 +3,7 @@
   margin: 2rem auto;
   padding: 0 1rem;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1;
   gap: 2rem;
   justify-items: center;
   align-items: center;

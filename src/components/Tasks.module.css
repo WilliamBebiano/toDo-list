@@ -20,8 +20,6 @@
   width: 46rem;
   min-height: 4.5rem;
   color: var(--gray-200);
-  
-
 }
 
 .tasks:hover{
@@ -63,4 +61,8 @@
   max-width: 38rem;
   word-wrap: break-word;
   height: auto;
+}
+
+.strikethrough {
+  text-decoration: line-through;
 }
