@@ -54,7 +54,7 @@ export function NewTask() {
 const isNewTaskInputEmpty = newTasksInput.length === 0
 
   return(
-   <div>
+   <div className={styles.containner}>
     <form onSubmit={addNewTask} className={styles.wrapper}>
       <input 
       name='tasks' 

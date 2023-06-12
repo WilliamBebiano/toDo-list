@@ -34,6 +34,7 @@ export function ListOfTasks(props) {
   }
 
   return (
+    <div className={styles.container}>
     <div className={styles.wrapper}>
       <div className={styles.taskControls}>
         <p className={styles.createdTask}>Tarefas criadas <span>{tasks.length}</span></p>
@@ -59,6 +60,7 @@ export function ListOfTasks(props) {
           ))
         )}
       </div>
+    </div>
     </div>
   )
 }

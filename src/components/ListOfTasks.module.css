@@ -1,29 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  margin-top: 2rem;
+}
 .wrapper{
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
-  position: relative;
-  padding: 0px;
-  gap: 2rem;
-  min-width: 46rem;
-  height: 50vh;
-  top: 3.7rem;
-  
-
+  width: 60rem;
 }
-
-.taskControls{
-  display:flex;
+.taskControls {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  width: 46rem;
-  height: 1.3rem;
-  
+  width: 54rem;
+  margin-bottom: 1rem;
+ 
 }
 
-.createdTask{
+
+.createdTask {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -34,15 +36,14 @@
   color: var(--blue-500);
 }
 
-.createdTask span{
+.createdTask span {
   background: var(--gray-300);
   color: var(--gray-200);
   border-radius: 180px;
-  padding: .2rem .5rem;
-  
+  padding: 0.2rem 0.5rem;
 }
 
-.concluedTask{
+.concluedTask {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -53,41 +54,65 @@
   color: var(--purple-300);
 }
 
-.concluedTask span{
+.concluedTask span {
   background: var(--gray-300);
   color: var(--gray-200);
   border-radius: 180px;
-  padding: .2rem .5rem;
-
+  padding: 0.2rem 0.5rem;
 }
 
-.displayTasks{
+.displayTasks {
   display: flex;
   flex-direction: column;
+  width: 80%;
+  height: 50vh;
+}
 
-  }
-
-.emptyTasks{
+.emptyTasks {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 46rem;
-  height: 16rem;
+  flex:1;
+  height: 20vh;
+  margin-top: 2rem;
   border-top: 1px solid var(--gray-100);
   border-radius: 8px;
 }
 
-.emptyTasks strong{
+.emptyTasks strong {
   margin-top: 1rem;
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.5rem;
 }
 
-.emptyTasks p{
-  margin-top: 0.2rem;
+.emptyTasks p {
+  margin-top: 0.5rem;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 700;
 }
+
+/* Responsivo para dispositivos com largura máxima de 768px */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 450px
+  }
+
+  .taskControls {
+    width: 350px;
+    font-size: 0.875rem;
+    
+  }
+
+  .emptyTasks {
+    width: 350px
+  }
+  .emptyTasks strong{
+    font-size: 0.875rem
+  }
+  .displayTasks{
+    width: 380px
+  }
+} 
